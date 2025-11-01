@@ -21,9 +21,25 @@ To write a Python program that reverses the values in a stack using standard sta
 
 
 ### Program:
-Add Code Here
+    def reverseParentheses(s):
+        stack = []
+        for char in s:
+            if char == ')':
+                temp = ''
+                while stack and stack[-1] != '(':
+                    temp += stack.pop()
+                stack.pop()  # Remove '('
+                for ch in temp:
+                    stack.append(ch)
+            else:
+                stack.append(char)
+        return ''.join(stack)
+    strr = input()
+    print(reverseParentheses(strr))
 
-## 🧪 Sample Input and Output
+## Output:
+
+<img width="1080" height="214" alt="image" src="https://github.com/user-attachments/assets/dd30a009-7590-4653-9dfd-07f2b9aee544" />
 
 ## Result
-
+Thus the program executed successfully .
