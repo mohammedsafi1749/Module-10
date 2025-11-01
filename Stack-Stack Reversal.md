@@ -1,4 +1,4 @@
-# # Stack-Stack Reversal Program 🔁
+## Stack-Stack Reversal Program 🔁
 
 This Python program demonstrates how to reverse the values in a stack using basic stack operations like push and pop.
 
