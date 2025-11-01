@@ -22,7 +22,22 @@ To write a Python program to:
 7. Print the updated list.
 
 ## 🧪 Program: 
+    from queue import Queue
+    def display_queue_descending():
+        q = Queue()
+        n = int(input())
+        for _ in range(n):
+            q.put(int(input()))
+        elements = []
+        while not q.empty():
+            elements.append(q.get())
+        elements.sort(reverse=True)
+        for val in elements:
+            print(val)
+    display_queue_descending()
 
 ### Output:
+<img width="1128" height="514" alt="image" src="https://github.com/user-attachments/assets/62bf7e2d-0d22-4c8d-90c7-589091a31a1f" />
 
 ## Result:
+Thus the program executed successfully .
